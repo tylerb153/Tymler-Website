@@ -1,0 +1,9 @@
+@font-face {
+    font-family: tyler;
+    src: url(/static/tylershandwriting.ttf)
+}
+
+#name {
+    font-size: 10vw;
+    font-family: tyler, "M PLUS Rounded 1c", sans-serif;
+}

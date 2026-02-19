@@ -1,0 +1,7 @@
+.h-100wf {
+    height: calc(100% - 65px);
+}
+
+* {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}

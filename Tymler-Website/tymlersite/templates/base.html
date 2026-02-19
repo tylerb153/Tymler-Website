@@ -13,10 +13,34 @@
         <link rel="icon" sizes="192x192" href="{% static 'android-chrome-192x192.png' %}">
         
         <script src="{% static 'js/base.js' %}" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
         {% block head %}{% endblock%}
     </head>
     <body class="">
-        {% block content %}{% endblock %}
+        <div class="h-100wf">
+            <div class="bg-background-secondary container-xxl mt-4">
+                <h1 id="name" class="text-center fw-bolder">TYLER BISCHOFF</h1>
+                <ul class="nav nav-tabs justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Links</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Tymler Award</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Bologna Counter</a>
+                    </li>
+                </ul>
+            </div>
+            {% block content %}{% endblock %}
+        </div>
 
         <hr class="m-0">
         <footer class="d-flex flex-column p-1 align-items-center bg-body-secondary">
