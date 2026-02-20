@@ -5,3 +5,17 @@
 * {
     font-family: "M PLUS Rounded 1c", sans-serif;
 }
+
+@font-face {
+    font-family: tyler;
+    src: url(/static/tylershandwriting.ttf)
+}
+
+#name {
+    font-size: 10vw;
+    font-family: tyler, "M PLUS Rounded 1c", sans-serif;
+}
+
+/* body {
+    background: linear-gradient(170deg, rgb(69, 160, 234), rgb(104, 0, 142));
+} */

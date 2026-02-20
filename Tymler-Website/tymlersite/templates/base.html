@@ -23,13 +23,23 @@
     <body class="">
         <div class="h-100wf">
             <div class="bg-background-secondary container-xxl mt-4">
-                <h1 id="name" class="text-center fw-bolder">TYLER BISCHOFF</h1>
+                <a class="text-reset text-decoration-none text-center" href="{% url 'home' %}">
+                    <h1 id="name" class="fw-bolder">TYLER BISCHOFF</h1>
+                </a>
                 <ul class="nav nav-tabs justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'home' %}">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home' %}">Links</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Links</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'home' %}"><i class="bi bi-music-note-beamed me-1"></i>Music</a></li>
+                            <li><a class="dropdown-item" href="{% url 'home' %}"><i class="bi bi-book me-1"></i>Books</a></li>
+                            <li><a class="dropdown-item" href="https://youtube.com/@tylerbischoff"><i class="bi bi-youtube me-1"></i>Youtube</a></li>
+                            <li><a class="dropdown-item" href="https://www.theminecraftcult.com"><i class="bi bi-box me-1"></i>The Minecraft Cult</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://jacob-cherchio.myportfolio.com">Jacob's Portfolio</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'home' %}">Tymler Award</a>
