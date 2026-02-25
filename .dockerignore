@@ -1,0 +1,10 @@
+.vscode
+__pycache__
+*.sqlite3
+.DS_Store
+Tymler-Website/media
+.env
+Tymler-Website/staticfiles
+media-files
+db
+sqlite-db
