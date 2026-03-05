@@ -1,5 +1,5 @@
 .h-100wf {
-    height: calc(100% - 65px);
+    min-height: calc(100% - 24px);
 }
 
 * {
@@ -12,10 +12,62 @@
 }
 
 #name {
-    font-size: 10vw;
+    font-size: clamp(1rem, 10vw, 140px);
     font-family: tyler, "M PLUS Rounded 1c", sans-serif;
 }
 
-/* body {
-    background: linear-gradient(170deg, rgb(69, 160, 234), rgb(104, 0, 142));
+body {
+    background: linear-gradient(170deg, rgb(179, 221, 255), rgb(187, 145, 201));
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-link.active:hover {
+    background-color: transparent;
+    border-color: black;
+    border-bottom-color: rgb(181, 205, 245);
+}
+
+.nav-tabs {
+    border-color: black;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: mediumpurple;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    border-color: mediumpurple;
+}
+
+.dropdown-menu {
+    background-color: transparent;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:active {
+    color: mediumpurple;
+}
+
+
+/* .dropdown-menu {
+    background-color: transparent;
+}
+
+.nav-tabs {
+    border-color: black;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+    border-color: black;
+}
+
+.nav-link {
+    color: black;
 } */

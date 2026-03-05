@@ -20,9 +20,9 @@
 
         {% block head %}{% endblock%}
     </head>
-    <body class="">
+    <body>
         <div class="h-100wf">
-            <div class="bg-background-secondary container-xxl mt-4">
+            <div class="container-xxl mt-4">
                 <a class="text-reset text-decoration-none text-center" href="{% url 'home' %}">
                     <h1 id="name" class="fw-bolder">TYLER BISCHOFF</h1>
                 </a>
@@ -54,7 +54,7 @@
 
         <hr class="m-0">
         <footer class="d-flex flex-column p-1 align-items-center bg-body-secondary">
-            <a class="link-secondary link-underline link-underline-opacity-0 link m-1">© Tyler Bischoff</a>
+            <a href="{% url 'home' %}" class="link-secondary link-underline link-underline-opacity-0 link m-1">© Tyler Bischoff</a>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
