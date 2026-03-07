@@ -43,7 +43,7 @@ body {
 }
 
 .dropdown-menu {
-    background-color: transparent;
+    background: linear-gradient(170deg, rgb(180, 205, 243), rgb(182, 194, 236));
 }
 
 .dropdown-item:hover {
@@ -53,21 +53,3 @@ body {
 .dropdown-item:active {
     color: mediumpurple;
 }
-
-
-/* .dropdown-menu {
-    background-color: transparent;
-}
-
-.nav-tabs {
-    border-color: black;
-}
-
-.nav-tabs .nav-link.active {
-    background-color: transparent;
-    border-color: black;
-}
-
-.nav-link {
-    color: black;
-} */
