@@ -47,6 +47,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'home' %}">Bologna Counter</a>
                     </li>
+                    {% comment %} <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Gambling</a>
+                        <ul class="dropdown-menu shadow">
+                            <li><a class="dropdown-item" href="{% url 'home' %}">Blackjack</a></li>
+                            <li><a class="dropdown-item" href="{% url 'home' %}">Slots</a></li>
+                            <li><a class="dropdown-item" href="{% url 'home' %}">Craps</a></li>
+                            <li><a class="dropdown-item" href="{% url 'home' %}">Poker</a></li>
+                            <li><a class="dropdown-item" href="{% url 'home' %}">Horse Racing</a></li>
+                        </ul>
+                    </li> {% endcomment %}
                 </ul>
             </div>
             {% block content %}{% endblock %}
