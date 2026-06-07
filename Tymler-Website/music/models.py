@@ -11,6 +11,7 @@ class Song(models.Model):
     description = models.TextField(null=True)
     genre = models.CharField(max_length=100)
     releaseDate = models.DateField()
+    featured = models.BooleanField()
 
 class Link(models.Model):
     service = models.CharField(max_length=255)
