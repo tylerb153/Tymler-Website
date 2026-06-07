@@ -120,4 +120,5 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'tymlersite/static',
+    BASE_DIR / 'music/static',
 ]
