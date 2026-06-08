@@ -38,6 +38,6 @@ class AdminSong(admin.ModelAdmin):
 
 @admin.register(Link)
 class AdminLink(admin.ModelAdmin):
-    list_display = ['service', 'song']
+    list_display = ['__str__', 'song', 'service']
     list_filter = ['service', 'song']
     search_fields = ['service', 'song']

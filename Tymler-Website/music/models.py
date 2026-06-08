@@ -22,6 +22,9 @@ class Link(models.Model):
     embed = models.BooleanField(default=False)
     song = models.ForeignKey(Song, on_delete=models.CASCADE, related_name="links")
 
+    def __str__(self):
+        return f"{self.song.title} - {self.service}"
+
 
 @receiver(models.signals.post_delete, sender=Song)
 def deleteImageFile(sender, instance, **kwargs):
