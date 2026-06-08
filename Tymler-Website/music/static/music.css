@@ -1,3 +1,13 @@
+* {
+    transition: all .3s ease-out;
+}
+.hover-scale:hover {
+    transform: scale(1.05)!important;
+}
+.hover-scale:active {
+    transform: scale(1.02)!important;
+}
+
 .featured-img {
     background-size: cover;
     background-position: center;

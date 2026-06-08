@@ -16,6 +16,7 @@ class Song(models.Model):
 class Link(models.Model):
     service = models.CharField(max_length=255)
     url = models.TextField()
+    embed = models.BooleanField(default=False)
     song = models.ForeignKey(Song, on_delete=models.CASCADE, related_name="links")
 
 
