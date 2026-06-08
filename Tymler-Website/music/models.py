@@ -12,6 +12,9 @@ class Song(models.Model):
     genre = models.CharField(max_length=100, blank=True)
     releaseDate = models.DateField()
     featured = models.BooleanField()
+    
+    def __str__(self):
+        return self.title
 
 class Link(models.Model):
     service = models.CharField(max_length=255)
