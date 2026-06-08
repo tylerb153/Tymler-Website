@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'tymlersite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'db' / 'db.sqlite3',
     }
 }
 
@@ -122,6 +122,9 @@ STATICFILES_DIRS = [
     BASE_DIR / 'tymlersite/static',
     BASE_DIR / 'music/static',
 ]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 DJANGORESIZED_DEFAULT_SIZE = [1000, 1000]
 DJANGORESIZED_DEFAULT_SCALE = 1

@@ -7,7 +7,7 @@ import os
 class Song(models.Model):
     title = models.CharField(max_length=255)
     artist = models.CharField(max_length=100)
-    coverArt = ResizedImageField(force_format="WEBP", size=None, upload_to='music/media/')
+    coverArt = ResizedImageField(force_format="WEBP", size=None, upload_to='music/')
     description = models.TextField(null=True)
     genre = models.CharField(max_length=100)
     releaseDate = models.DateField()
