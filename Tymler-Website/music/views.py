@@ -10,5 +10,5 @@ def music(request):
     featuredSong = songs.filter(featured=True).first()
     
 
-    context = {'songs': songs, 'featured': featuredSong}
+    context = {'songs': songs, 'featuredSong': featuredSong}
     return render(request, 'music.html', context)
