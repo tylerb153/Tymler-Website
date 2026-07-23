@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'music'
+    'music',
+    'books',
 ]
 
 MIDDLEWARE = [
@@ -121,6 +122,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'tymlersite/static',
     BASE_DIR / 'music/static',
+    BASE_DIR / 'books/static',
 ]
 
 MEDIA_URL = '/media/'
